@@ -14,20 +14,24 @@ namespace TiffinTracker.Models
     {
         public int Id { get; set; }
 
-        [Required]
         public int StudentId { get; set; }
-
-        [ForeignKey("StudentId")]
-        public Student Student { get; set; }
 
         [Required]
         public DateTime DistributionDate { get; set; }
 
         [Required]
-        public MealType MealType { get; set; }
+        public MealType MealType { get; set; } // "Breakfast", "Tiffin"
 
-        public bool Received { get; set; }
+        public bool Received { get; set; } = true;
 
         public string Remarks { get; set; }
+
+        
+        public int? CreatedBy { get; set; }
+
+        public Student Student { get; set; }
+        [ForeignKey("CreatedBy")]
+        public User Creator { get; set; }
     }
+
 }

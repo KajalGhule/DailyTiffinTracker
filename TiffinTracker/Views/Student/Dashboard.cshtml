@@ -1,0 +1,32 @@
+﻿@{ 
+    ViewData["Title"] = "Student Dashboard"; 
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 rounded-4 bg-light">
+        <div class="card-body p-5">
+            <h2 class="text-center text-success mb-4">
+                🎒 Welcome, @User.Identity.Name
+            </h2>
+            <p class="text-center lead text-muted mb-5">
+                What would you like to do today?
+            </p>
+
+            <div class="row g-4 justify-content-center">
+                <div>
+
+                </div>
+                <div class="col-md-4">
+                    <a href="/Student/History" class="btn btn-outline-secondary w-100 p-4 rounded-4 shadow">
+                        📅 View Tiffin History
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="/Home/Logout" class="btn btn-danger w-100 p-4 rounded-4 shadow">
+                        🚪 Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

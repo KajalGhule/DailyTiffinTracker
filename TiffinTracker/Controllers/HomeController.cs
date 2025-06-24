@@ -18,9 +18,9 @@ namespace TiffinTracker.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult LogOut()
         {
-            return View();
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

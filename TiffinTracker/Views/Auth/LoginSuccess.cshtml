@@ -1,0 +1,22 @@
+﻿@{
+    var token = ViewBag.Token;
+    var role = ViewBag.Role;
+}
+
+<script>
+    // Save to localStorage & cookie
+    const token = '@token';
+    const role = '@role';
+
+    localStorage.setItem('jwt', token);
+    document.cookie = `jwt=${token}; path=/; max-age=7200`; // 2 hours
+
+    // Redirect based on role
+    if (role === "Admin") {
+        window.location.href = "/Admin/Users";
+    } else if (role === "TiffinProvider") {
+        window.location.href = "/Meal/Add";
+    } else {
+        window.location.href = "/Student/Dashboard";
+    }
+</script>

@@ -9,8 +9,15 @@ namespace TiffinTracker.Models
         [Required]
         public string Name { get; set; }
 
+        public int? UserId { get; set; }
+
         public bool IsActive { get; set; } = true;
 
+        public User User { get; set; } // Navigation
+
         public ICollection<MealDistribution> MealDistributions { get; set; }
+
+        public ICollection<MealAuditLog> MealAuditLogs { get; set; }
     }
+
 }

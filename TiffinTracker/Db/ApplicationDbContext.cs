@@ -7,17 +7,23 @@ namespace TiffinTracker.Db
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options) {}
 
+        public DbSet<User> User { get; set; }
         public DbSet<Student> Student { get; set; }
         public DbSet<MealDistribution> MealDistribution { get; set; }
         public DbSet<MealAuditLog> MealAuditLog { get; set; }
 
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-        //    // Define relationships if needed
-        //    modelBuilder.Entity<MealDistribution>()
-        //        .HasOne(m => m.Student)
-        //        .WithMany(s => s.MealDistributions)
-        //        .HasForeignKey(m => m.StudentId);
-        //}
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<MealDistribution>()
+                .Property(m => m.MealType)
+                .HasConversion(
+                    v => v.ToString(), // enum → string for MySQL
+                    v => (MealType)Enum.Parse(typeof(MealType), v) // string → enum for C#
+                );
+
+            base.OnModelCreating(modelBuilder);
+        }
+
+
     }
 }

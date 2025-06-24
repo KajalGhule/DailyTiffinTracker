@@ -112,3 +112,12 @@ D:\DailyTiffinTracker\TiffinTracker\obj\Debug\net8.0\refint\TiffinTracker.dll
 D:\DailyTiffinTracker\TiffinTracker\obj\Debug\net8.0\TiffinTracker.pdb
 D:\DailyTiffinTracker\TiffinTracker\obj\Debug\net8.0\TiffinTracker.genruntimeconfig.cache
 D:\DailyTiffinTracker\TiffinTracker\obj\Debug\net8.0\ref\TiffinTracker.dll
+D:\DailyTiffinTracker\TiffinTracker\obj\Debug\net8.0\TiffinTracker.sourcelink.json
+D:\DailyTiffinTracker\TiffinTracker\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\DailyTiffinTracker\TiffinTracker\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\DailyTiffinTracker\TiffinTracker\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\DailyTiffinTracker\TiffinTracker\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\DailyTiffinTracker\TiffinTracker\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\DailyTiffinTracker\TiffinTracker\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\DailyTiffinTracker\TiffinTracker\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\DailyTiffinTracker\TiffinTracker\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

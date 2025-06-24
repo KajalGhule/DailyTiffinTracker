@@ -1,0 +1,92 @@
+﻿@model TiffinTracker.Models.Student
+@{
+    ViewData["Title"] = "Tiffin History";
+}
+
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 rounded-4 bg-light">
+        <div class="card-body p-5">
+
+            <h2 class="mb-4 text-success">👋 Welcome, @Model.Name</h2>
+
+            <!-- Toggle Button -->
+            <button id="toggleFormBtn" class="btn btn-primary mb-4">
+                ➕ Add Today's Tiffin
+            </button>
+
+            <!-- Hidden Form -->
+            <div id="tiffinForm" style="display: none;" class="mb-4">
+                <h4 class="text-primary">🍱 Add Today's Tiffin</h4>
+                <form asp-action="AddTodayMeal" method="post">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-md-4">
+                            <label class="form-label">Meal Type:</label>
+                            <select name="mealType" class="form-select" required>
+                                <option value="">-- Select --</option>
+                                <option>Breakfast</option>
+                                <option>Tiffin</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="form-label">Remarks:</label>
+                            <input name="remarks" class="form-control" placeholder="Any notes..." />
+                        </div>
+
+                        <div class="col-md-2 d-grid">
+                            <button type="submit" class="btn btn-success mt-4">Submit</button>
+                        </div>
+                    </div>
+                </form>
+
+                <hr class="my-4" />
+            </div>
+
+            <!-- Always Show History -->
+            <h4 class="mb-3 text-primary">📅 Your Tiffin History</h4>
+
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover shadow-sm">
+                    <thead class="table-success">
+                        <tr>
+                            <th>Date</th>
+                            <th>Meal</th>
+                            <th>Received</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var meal in Model.MealDistributions.OrderByDescending(m => m.DistributionDate))
+                        {
+                            <tr>
+                                <td>@meal.DistributionDate.ToShortDateString()</td>
+                                <td>@meal.MealType</td>
+                                <td>
+                                    @if (meal.Received)
+                                    {
+                                        <span class="badge bg-success">Yes</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger">No</span>
+                                    }
+                                </td>
+                                <td>@meal.Remarks</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById('toggleFormBtn').addEventListener('click', function () {
+            var form = document.getElementById('tiffinForm');
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
+}

@@ -10,8 +10,13 @@ namespace TiffinTracker.Models
 
         public string Action { get; set; }
 
+        public int? PerformedBy { get; set; }
+
         public DateTime ActionTime { get; set; } = DateTime.Now;
 
         public Student Student { get; set; }
+
+        public User PerformedByUser { get; set; }
     }
+
 }
