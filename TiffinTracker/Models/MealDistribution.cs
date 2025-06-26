@@ -4,11 +4,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TiffinTracker.Models
 {
+    
     public enum MealType
     {
         Breakfast,
-        Tiffin
+        AfternoonTiffin,
+        EveningTiffin
     }
+
 
     public class MealDistribution
     {
@@ -20,7 +23,7 @@ namespace TiffinTracker.Models
         public DateTime DistributionDate { get; set; }
 
         [Required]
-        public MealType MealType { get; set; } // "Breakfast", "Tiffin"
+        public MealType MealType { get; set; } // "Breakfast", ""
 
         public bool Received { get; set; }
 

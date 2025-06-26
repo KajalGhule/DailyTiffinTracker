@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TiffinTracker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4a211ccb3f39d0dbf050da0a2c9148378ec648cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+632b601d331a84ad8a5b62e3ee59fe11dd6c36c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TiffinTracker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TiffinTracker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

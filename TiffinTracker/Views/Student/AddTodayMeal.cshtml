@@ -1,46 +1,39 @@
 ﻿@{
-    ViewData["Title"] = "Add Today’s Meal";
+    ViewData["Title"] = "🍽️ Add Today’s Meal";
 }
 
-<h2>@ViewData["Title"]</h2>
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 rounded-4 bg-light">
+        <div class="card-body p-5">
 
-<form asp-action="AddTodayMeal" method="post">
-    <div class="form-group">
-        <label for="mealType">Meal Type</label>
-        <select class="form-control" id="mealType" name="mealType" required>
-            <option value="">-- Select Meal --</option>
-            <option value="Breakfast">Breakfast</option>
-            <option value="Tiffin">Tiffin</option>
-        </select>
+            <h2 class="mb-4 text-success text-center">
+                <i class="bi bi-clipboard-plus"></i> @ViewData["Title"]
+            </h2>
+
+            <form asp-action="AddTodayMeal" method="post" class="needs-validation" novalidate>
+                <div class="row g-3 align-items-center justify-content-center">
+                    <!-- Meal Type -->
+                    <div class="col-md-6">
+                        <label for="mealType" class="form-label fw-semibold">🍴 Select Meal Type</label>
+                        <select class="form-select shadow-sm" id="mealType" name="mealType" required>
+                            <option value="">-- Choose --</option>
+                            <option value="Breakfast">Breakfast</option>
+                            <option value="AfternoonTiffin">Afternoon Tiffin</option>
+                            <option value="EveningTiffin">Evening Tiffin</option>
+                        </select>
+
+                        <div class="invalid-feedback">Please select a meal type.</div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-md-4 d-grid mt-4">
+                        <button type="submit" class="btn btn-success btn-lg shadow">
+                            <i class="bi bi-check-circle"></i> Submit Meal
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
     </div>
-
-    <div class="form-group">
-        <label>
-            <input type="checkbox" id="received" name="received" value="true" />
-            Meal Received
-        </label>
-    </div>
-
-    <div class="form-group">
-        <label for="remarks">Remarks <small>(allowed only if received)</small></label>
-        <textarea class="form-control" id="remarks" name="remarks" disabled></textarea>
-    </div>
-
-    <button type="submit" class="btn btn-primary">Submit Meal</button>
-</form>
-
-@section Scripts {
-    <script>
-        const receivedCheckbox = document.getElementById("received");
-        const remarksBox = document.getElementById("remarks");
-
-        receivedCheckbox.addEventListener("change", function () {
-            if (this.checked) {
-                remarksBox.disabled = false;
-            } else {
-                remarksBox.disabled = true;
-                remarksBox.value = '';
-            }
-        });
-    </script>
-}
+</div>

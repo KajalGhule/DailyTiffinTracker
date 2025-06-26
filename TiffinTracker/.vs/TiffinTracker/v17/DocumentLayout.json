@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\DailyTiffinTracker\\TiffinTracker\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\views\\student\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:views\\student\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\models\\mealdistribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:models\\mealdistribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\views\\student\\addtodaymeal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:views\\student\\addtodaymeal.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\views\\student\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:views\\student\\welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\models\\mealdistribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:models\\mealdistribution.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\views\\student\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:views\\student\\history.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0388A0AE-129C-4A7B-8962-C6F73095AD18}|TiffinTracker.csproj|d:\\dailytiffintracker\\tiffintracker\\db\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,74 +46,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Welcome.cshtml",
+              "DocumentMoniker": "D:\\DailyTiffinTracker\\TiffinTracker\\Views\\Student\\Welcome.cshtml",
+              "RelativeDocumentMoniker": "Views\\Student\\Welcome.cshtml",
+              "ToolTip": "D:\\DailyTiffinTracker\\TiffinTracker\\Views\\Student\\Welcome.cshtml",
+              "RelativeToolTip": "Views\\Student\\Welcome.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T11:26:56.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\DailyTiffinTracker\\TiffinTracker\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
+              "ToolTip": "D:\\DailyTiffinTracker\\TiffinTracker\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "Controllers\\StudentController.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAswEkAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T11:24:57.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "AddTodayMeal.cshtml",
               "DocumentMoniker": "D:\\DailyTiffinTracker\\TiffinTracker\\Views\\Student\\AddTodayMeal.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\AddTodayMeal.cshtml",
               "ToolTip": "D:\\DailyTiffinTracker\\TiffinTracker\\Views\\Student\\AddTodayMeal.cshtml",
               "RelativeToolTip": "Views\\Student\\AddTodayMeal.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAwC4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-25T07:36:23.647Z"
+              "WhenOpened": "2025-06-25T07:36:23.647Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "D:\\DailyTiffinTracker\\TiffinTracker\\Views\\Student\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\Dashboard.cshtml",
               "ToolTip": "D:\\DailyTiffinTracker\\TiffinTracker\\Views\\Student\\Dashboard.cshtml",
               "RelativeToolTip": "Views\\Student\\Dashboard.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwBAAAABwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-25T07:33:58.739Z"
+              "WhenOpened": "2025-06-25T07:33:58.739Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "History.cshtml",
               "DocumentMoniker": "D:\\DailyTiffinTracker\\TiffinTracker\\Views\\Student\\History.cshtml",
               "RelativeDocumentMoniker": "Views\\Student\\History.cshtml",
               "ToolTip": "D:\\DailyTiffinTracker\\TiffinTracker\\Views\\Student\\History.cshtml",
               "RelativeToolTip": "Views\\Student\\History.cshtml",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAgwF0AAABZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-25T07:23:39.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "MealDistribution.cs",
               "DocumentMoniker": "D:\\DailyTiffinTracker\\TiffinTracker\\Models\\MealDistribution.cs",
               "RelativeDocumentMoniker": "Models\\MealDistribution.cs",
               "ToolTip": "D:\\DailyTiffinTracker\\TiffinTracker\\Models\\MealDistribution.cs",
               "RelativeToolTip": "Models\\MealDistribution.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAIA4wBgAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBkAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-25T07:20:01.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "D:\\DailyTiffinTracker\\TiffinTracker\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StudentController.cs",
-              "ToolTip": "D:\\DailyTiffinTracker\\TiffinTracker\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "Controllers\\StudentController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAjwH4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-25T06:58:08.36Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\DailyTiffinTracker\\TiffinTracker\\Db\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Db\\ApplicationDbContext.cs",
@@ -121,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\DailyTiffinTracker\\TiffinTracker\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -129,12 +148,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAjwCsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T05:27:52.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-24T05:27:52.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TiffinTracker.csproj",
               "DocumentMoniker": "D:\\DailyTiffinTracker\\TiffinTracker\\TiffinTracker.csproj",
               "RelativeDocumentMoniker": "TiffinTracker.csproj",

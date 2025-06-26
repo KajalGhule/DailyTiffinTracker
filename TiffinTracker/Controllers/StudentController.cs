@@ -67,8 +67,11 @@ namespace TiffinTracker.Controllers
                 return BadRequest("Invalid meal type.");
 
             // Only allow tiffin before 12 PM
-            if (parsedMealType == MealType.Tiffin && DateTime.Now.TimeOfDay > new TimeSpan(14, 0, 0))
+            if (parsedMealType == MealType.AfternoonTiffin && DateTime.Now.TimeOfDay > new TimeSpan(14, 0, 0))
                 return BadRequest("Tiffin can only be requested before 12:00 PM.");
+
+            if (parsedMealType == MealType.EveningTiffin && DateTime.Now.TimeOfDay > new TimeSpan(19, 0, 0))
+                return BadRequest("Tiffin can only be requested before 7:00 PM.");
 
             // Prevent duplicate entry
             bool alreadyExists = _context.MealDistribution.Any(m =>
@@ -97,7 +100,9 @@ namespace TiffinTracker.Controllers
             _context.MealDistribution.Add(meal);
             _context.SaveChanges();
 
-            return Ok("Tiffin request submitted.");
+            //return Ok("Tiffin request submitted.");
+            return RedirectToAction("Dashboard");
+            
         }
 
         [HttpPost]
@@ -124,6 +129,7 @@ namespace TiffinTracker.Controllers
             _context.SaveChanges();
 
             return RedirectToAction("History");
+            
         }
 
     }
