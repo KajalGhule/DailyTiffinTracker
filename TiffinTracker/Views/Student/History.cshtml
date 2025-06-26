@@ -53,6 +53,8 @@
                             <th>Meal</th>
                             <th>Received</th>
                             <th>Remarks</th>
+                            <!-- Add button to change Received -->
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -72,7 +74,43 @@
                                     }
                                 </td>
                                 <td>@meal.Remarks</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary"
+                                            onclick="toggleEditForm(@meal.Id)">
+                                        Edit
+                                    </button>
+                                </td>
                             </tr>
+
+                            <tr id="editForm-@meal.Id" style="display:none">
+                                <td colspan="5">
+                                    <form method="post" asp-action="UpdateMealStatus">
+                                        <input type="hidden" name="mealId" value="@meal.Id" />
+
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <label class="form-check-label">
+                                                    <input type="checkbox" name="received" class="form-check-input"
+                                                           id="received-@meal.Id" value="true"
+                                                           onchange="handleReceivedToggle(@meal.Id)" />
+                                                    Received
+                                                </label>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" name="remarks"
+                                                       id="remarks-@meal.Id"
+                                                       placeholder="Enter remark (only if received)" disabled />
+                                            </div>
+
+                                            <div class="col-md-2">
+                                                <button type="submit" class="btn btn-sm btn-primary">Update</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+
                         }
                     </tbody>
                 </table>
@@ -88,5 +126,21 @@
             var form = document.getElementById('tiffinForm');
             form.style.display = form.style.display === 'none' ? 'block' : 'none';
         });
+
+        function toggleEditForm(id) {
+            const form = document.getElementById("editForm-" + id);
+            form.style.display = (form.style.display === "none") ? "table-row" : "none";
+        }
+
+         function handleReceivedToggle(id) {
+            const checkbox = document.getElementById("received-" + id);
+            const remarks = document.getElementById("remarks-" + id);
+
+            remarks.disabled = !checkbox.checked;
+
+            if (!checkbox.checked) {
+                remarks.value = ""; // Clear if unchecked
+            }
+        }
     </script>
 }

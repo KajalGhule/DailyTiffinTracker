@@ -44,39 +44,88 @@ namespace TiffinTracker.Controllers
 
             return View(student);
         }
-        // POST: /Student/AddTodayMeal
-        [HttpPost]
-        public IActionResult AddTodayMeal(string mealType, string remarks)
+        
+        public IActionResult AddTodayMeal()
         {
-            var userIdClaim = User.FindFirst("UserId"); // "UserId" must be a claim in your JWT
+            return View();
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Student")]
+        public IActionResult AddTodayMeal(string mealType, string? remarks, bool received)
+        {
+            var userIdClaim = User.FindFirst("UserId");
             if (userIdClaim == null)
                 return Unauthorized();
 
             int userId = int.Parse(userIdClaim.Value);
 
-            var student = _context.Student.FirstOrDefault(s => s.UserId == userId); // Replace with actual UserId
+            var student = _context.Student.FirstOrDefault(s => s.UserId == userId);
+            if (student == null) return NotFound("Student not found.");
 
-            if (student == null) return NotFound();
-
-            if (!Enum.TryParse(mealType, out MealType parsedMealType))
+            if (!Enum.TryParse(mealType, true, out MealType parsedMealType))
                 return BadRequest("Invalid meal type.");
+
+            // Only allow tiffin before 12 PM
+            if (parsedMealType == MealType.Tiffin && DateTime.Now.TimeOfDay > new TimeSpan(14, 0, 0))
+                return BadRequest("Tiffin can only be requested before 12:00 PM.");
+
+            // Prevent duplicate entry
+            bool alreadyExists = _context.MealDistribution.Any(m =>
+                m.StudentId == student.Id &&
+                m.MealType == parsedMealType &&
+                m.DistributionDate == DateTime.Today);
+
+            if (alreadyExists)
+                return BadRequest("You have already requested this meal today.");
+
+            // ❗ Remarks are only allowed if received == true
+            if (!received && !string.IsNullOrWhiteSpace(remarks))
+                return BadRequest("Remarks are allowed only if the meal is marked as received.");
 
             var meal = new MealDistribution
             {
                 StudentId = student.Id,
                 MealType = parsedMealType,
                 DistributionDate = DateTime.Today,
-                Received = true,
-                Remarks = remarks,
+                Received = received,
+                Remarks = received ? remarks?.Trim() : null,
                 CreatedBy = student.UserId
             };
 
+            Console.WriteLine("Received value: " + meal.Received);
             _context.MealDistribution.Add(meal);
+            _context.SaveChanges();
+
+            return Ok("Tiffin request submitted.");
+        }
+
+        [HttpPost]
+        [Authorize(Roles = "Student")]
+        public IActionResult UpdateMealStatus(int mealId, bool received, string? remarks)
+        {
+            var meal = _context.MealDistribution.FirstOrDefault(m => m.Id == mealId);
+            if (meal == null)
+                return NotFound("Meal not found.");
+
+            // Ensure the logged-in user owns this meal
+            var userId = int.Parse(User.FindFirst("UserId")!.Value);
+            var student = _context.Student.FirstOrDefault(s => s.UserId == userId);
+            if (student == null || meal.StudentId != student.Id)
+                return Unauthorized();
+
+            // Remarks allowed only if received = true
+            if (!received && !string.IsNullOrWhiteSpace(remarks))
+                return BadRequest("Remarks are only allowed when meal is received.");
+
+            meal.Received = received;
+            meal.Remarks = received ? remarks?.Trim() : null;
+
             _context.SaveChanges();
 
             return RedirectToAction("History");
         }
-    }
 
+    }
 
 }

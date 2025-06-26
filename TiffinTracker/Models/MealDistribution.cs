@@ -22,9 +22,9 @@ namespace TiffinTracker.Models
         [Required]
         public MealType MealType { get; set; } // "Breakfast", "Tiffin"
 
-        public bool Received { get; set; } = true;
+        public bool Received { get; set; }
 
-        public string Remarks { get; set; }
+        public string? Remarks { get; set; }
 
         
         public int? CreatedBy { get; set; }
