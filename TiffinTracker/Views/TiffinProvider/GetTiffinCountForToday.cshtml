@@ -1,0 +1,7 @@
+﻿<h4>🥗 Today's Tiffin Preparation</h4>
+<ul>
+    @foreach (var item in ViewBag.GroupedTiffinCounts)
+    {
+        <li>@item.MealType: @item.Count</li>
+    }
+</ul>

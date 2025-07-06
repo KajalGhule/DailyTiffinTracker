@@ -72,6 +72,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxXZWxjb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/DailyTiffinTracker/TiffinTracker/Views/TiffinProvider/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlmZmluUHJvdmlkZXJcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DailyTiffinTracker/TiffinTracker/Views/TiffinProvider/GetTiffinCountForToday.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlmZmluUHJvdmlkZXJcR2V0VGlmZmluQ291bnRGb3JUb2RheS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/DailyTiffinTracker/TiffinTracker/Views/TiffinProvider/GetTodayTiffin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGlmZmluUHJvdmlkZXJcR2V0VG9kYXlUaWZmaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/DailyTiffinTracker/TiffinTracker/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

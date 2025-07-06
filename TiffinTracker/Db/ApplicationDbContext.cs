@@ -12,6 +12,7 @@ namespace TiffinTracker.Db
         public DbSet<MealDistribution> MealDistribution { get; set; }
         public DbSet<MealAuditLog> MealAuditLog { get; set; }
 
+        public DbSet<ProviderStudent> ProviderStudent { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<MealDistribution>()
@@ -22,6 +23,8 @@ namespace TiffinTracker.Db
                 );
 
             base.OnModelCreating(modelBuilder);
+
+           
         }
 
 
